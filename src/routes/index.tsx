@@ -193,6 +193,81 @@ function Index() {
         </div>
       </section>
 
+      {/* Por que escolher */}
+      <section className="py-32 border-t border-border">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl mb-20">
+            <span
+              className="text-xs uppercase tracking-widest text-primary mb-6 block"
+              style={{ fontFamily: "var(--font-mono)" }}
+            >
+              Por que escolher
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 text-balance">
+              Por que escolher a{" "}
+              <span
+                className="italic font-normal text-primary"
+                style={{ fontFamily: "var(--font-serif)" }}
+              >
+                Projetar
+              </span>
+              ?
+            </h2>
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Somos especialistas em transformar a forma como as empresas
+              utilizam tecnologia.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-px bg-border border border-border mb-20">
+            {[
+              {
+                t: "Tecnologia Simples",
+                d: "Soluções intuitivas que sua equipe consegue usar desde o primeiro dia.",
+              },
+              {
+                t: "Agilidade Garantida",
+                d: "Implementação rápida sem comprometer a qualidade ou segurança.",
+              },
+              {
+                t: "Qualidade Premium",
+                d: "Padrões internacionais em segurança, performance e confiabilidade.",
+              },
+            ].map((item) => (
+              <div key={item.t} className="bg-card p-10">
+                <h3 className="text-xl font-semibold mb-3">{item.t}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {item.d}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-10 border-t border-border pt-16">
+            {[
+              { n: "15+", l: "Anos de Experiência" },
+              { n: "50+", l: "Projetos Concluídos" },
+              { n: "100%", l: "Dedicados ao Sucesso" },
+            ].map((s) => (
+              <div key={s.l} className="flex flex-col gap-2">
+                <span
+                  className="text-5xl md:text-6xl font-bold tracking-tighter text-primary"
+                  style={{ fontFamily: "var(--font-serif)" }}
+                >
+                  {s.n}
+                </span>
+                <span
+                  className="text-xs uppercase tracking-widest text-muted-foreground"
+                  style={{ fontFamily: "var(--font-mono)" }}
+                >
+                  {s.l}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Testimonial */}
       <section className="bg-card border-y border-border py-24">
         <div className="max-w-4xl mx-auto px-6 text-center">
