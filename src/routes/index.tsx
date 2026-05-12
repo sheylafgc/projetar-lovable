@@ -193,10 +193,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Testimonial */}
-      <section className="bg-card border-y border-border py-24">
-        {null}
-      </section>
       {/* Por que escolher */}
       <section className="py-32 border-t border-border">
         <div className="max-w-7xl mx-auto px-6">
