@@ -99,6 +99,17 @@ function ContatoPage() {
         <form
           onSubmit={(e) => {
             e.preventDefault();
+            const f = e.currentTarget as HTMLFormElement;
+            const get = (id: string) =>
+              (f.elements.namedItem(id) as HTMLInputElement | HTMLTextAreaElement | null)?.value ?? "";
+            const nome = get("nome");
+            const empresa = get("empresa");
+            const email = get("email");
+            const telefone = get("telefone");
+            const mensagem = get("mensagem");
+            const subject = `Novo contato pelo site — ${nome}${empresa ? ` (${empresa})` : ""}`;
+            const body = `Nome: ${nome}\nEmpresa: ${empresa}\nE-mail: ${email}\nTelefone: ${telefone}\n\nMensagem:\n${mensagem}`;
+            window.location.href = `mailto:sheylainfo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
             setSent(true);
           }}
           className="bg-card border border-border rounded-2xl p-10 space-y-6"
