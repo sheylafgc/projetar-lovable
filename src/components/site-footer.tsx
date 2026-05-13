@@ -1,18 +1,20 @@
 import { Link } from "@tanstack/react-router";
+import logo from "@/assets/projetar-logo.png";
 
 export function SiteFooter() {
   return (
     <footer className="bg-foreground text-background py-24">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
         <div>
-          <div className="flex items-baseline gap-1 mb-4">
-            <span className="font-bold tracking-tight text-lg">PROJETAR</span>
-            <span className="text-primary text-xs" style={{ fontFamily: "var(--font-mono)" }}>
-              .SOLUÇÕES
-            </span>
-          </div>
+          <img
+            src={logo}
+            alt="Projetar Soluções Tecnológicas"
+            className="h-14 w-auto mb-4 brightness-0 invert"
+            width={400}
+            height={120}
+          />
           <p className="text-background/60 text-sm leading-relaxed max-w-xs">
-            Engenharia de software com alma. Tecnologia simples, ágil e de qualidade para sua empresa.
+            Tecnologia completa, ágil e de qualidade para sua empresa crescer.
           </p>
         </div>
         <div>
@@ -37,9 +39,8 @@ export function SiteFooter() {
           </ul>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-background/10 text-xs text-background/40 flex flex-col md:flex-row justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-background/10 text-xs text-background/40">
         <p>© {new Date().getFullYear()} Projetar Soluções. Todos os direitos reservados.</p>
-        <p>Feito com calma, em parceria.</p>
       </div>
     </footer>
   );

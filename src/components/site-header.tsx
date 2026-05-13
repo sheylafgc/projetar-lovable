@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import logo from "@/assets/projetar-logo.jpg";
+import logo from "@/assets/projetar-logo.png";
 
 export function SiteHeader() {
   return (
@@ -9,7 +9,7 @@ export function SiteHeader() {
           <img
             src={logo}
             alt="Projetar Soluções Tecnológicas"
-            className="h-10 w-auto mix-blend-multiply"
+            className="h-12 w-auto"
             width={400}
             height={120}
           />
@@ -21,12 +21,14 @@ export function SiteHeader() {
           <Link to="/metodo" className="hover:text-primary transition-colors" activeProps={{ className: "text-primary" }}>
             Método
           </Link>
-          <Link
-            to="/contato"
+          <a
+            href="https://wa.me/5583988126769"
+            target="_blank"
+            rel="noopener noreferrer"
             className="ml-2 inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 hover:bg-primary/90 transition-colors shadow-md shadow-primary/20"
           >
             Falar com a Projetar
-          </Link>
+          </a>
         </div>
       </div>
     </nav>
