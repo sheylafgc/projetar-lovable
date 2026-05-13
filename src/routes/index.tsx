@@ -40,7 +40,15 @@ function Index() {
       <SiteHeader />
 
       {/* Hero */}
-      <header className="max-w-7xl mx-auto px-6 pt-24 pb-32 grid md:grid-cols-[1fr_400px] gap-12 items-end">
+      <header
+        className="relative"
+        style={{
+          backgroundImage: "var(--pattern-digital)",
+          backgroundSize: "24px 24px",
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/60 to-background pointer-events-none" />
+        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-32 grid md:grid-cols-[1fr_400px] gap-12 items-end">
         <div className="animate-reveal">
           <span
             className="text-xs uppercase tracking-widest text-primary mb-6 block"
@@ -48,11 +56,10 @@ function Index() {
           >
             Tecnologia com presença
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.95] mb-8 text-balance">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95] mb-8 text-balance text-secondary">
             Software não precisa ser{" "}
             <span
-              className="italic font-normal text-primary"
-              style={{ fontFamily: "var(--font-serif)" }}
+              className="italic text-primary"
             >
               estressante
             </span>
@@ -66,7 +73,8 @@ function Index() {
           <div className="flex items-center gap-6 flex-wrap">
             <Link
               to="/contato"
-              className="bg-primary text-primary-foreground px-7 py-4 rounded-full font-medium transition-transform hover:scale-[1.03] active:scale-95 shadow-lg shadow-primary/20"
+              className="text-primary-foreground px-7 py-4 rounded-full font-semibold transition-transform hover:scale-[1.03] active:scale-95"
+              style={{ background: "var(--gradient-brand)", boxShadow: "var(--shadow-brand)" }}
             >
               Conversar com um especialista
             </Link>
@@ -81,13 +89,14 @@ function Index() {
             alt="Espaço de trabalho calmo com café e laptop"
             width={800}
             height={1000}
-            className="w-full aspect-[4/5] object-cover rounded-2xl outline outline-1 -outline-offset-1 outline-foreground/5"
+            className="w-full aspect-[4/5] object-cover rounded-2xl ring-1 ring-primary/15 shadow-xl shadow-primary/10"
           />
+        </div>
         </div>
       </header>
 
       {/* Value bar */}
-      <section className="border-y border-border bg-card">
+      <section className="border-y border-border bg-accent/30">
         <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-10">
           {[
             { k: "Clareza", v: "Você entende cada decisão técnica, mesmo sem ser da área." },
@@ -111,7 +120,7 @@ function Index() {
       <section className="bg-card py-24">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-baseline mb-16 gap-4">
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-secondary">
               Nossas frentes de atuação
             </h2>
             <span
@@ -125,15 +134,15 @@ function Index() {
             {services.map((s) => (
               <div
                 key={s.n}
-                className="bg-card p-10 hover:bg-accent/40 transition-colors"
+                className="bg-background p-10 hover:bg-accent/40 transition-colors"
               >
                 <span
-                  className="text-xs text-primary mb-4 block"
+                  className="text-xs text-primary mb-4 block font-semibold"
                   style={{ fontFamily: "var(--font-mono)" }}
                 >
                   {s.n}
                 </span>
-                <h3 className="text-xl font-semibold mb-3">{s.title}</h3>
+                <h3 className="text-xl font-bold mb-3 text-secondary">{s.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {s.desc}
                 </p>
@@ -167,7 +176,7 @@ function Index() {
           >
             Como trabalhamos
           </span>
-          <h2 className="text-4xl font-bold tracking-tight mb-8">
+          <h2 className="text-4xl font-black tracking-tight mb-8 text-secondary">
             Parceria, não fornecedor.
           </h2>
           <div className="space-y-10">
@@ -203,12 +212,9 @@ function Index() {
             >
               Por que escolher
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 text-balance">
+            <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-6 text-balance text-secondary">
               Por que escolher a{" "}
-              <span
-                className="italic font-normal text-primary"
-                style={{ fontFamily: "var(--font-serif)" }}
-              >
+              <span className="italic text-primary">
                 Projetar
               </span>
               ?
@@ -234,8 +240,8 @@ function Index() {
                 d: "Padrões internacionais em segurança, performance e confiabilidade.",
               },
             ].map((item) => (
-              <div key={item.t} className="bg-card p-10">
-                <h3 className="text-xl font-semibold mb-3">{item.t}</h3>
+              <div key={item.t} className="bg-background p-10">
+                <h3 className="text-xl font-bold mb-3 text-secondary">{item.t}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {item.d}
                 </p>
@@ -251,8 +257,13 @@ function Index() {
             ].map((s) => (
               <div key={s.l} className="flex flex-col gap-2">
                 <span
-                  className="text-5xl md:text-6xl font-bold tracking-tighter text-primary"
-                  style={{ fontFamily: "var(--font-serif)" }}
+                  className="text-5xl md:text-6xl font-black tracking-tighter"
+                  style={{
+                    background: "var(--gradient-brand)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
                 >
                   {s.n}
                 </span>
@@ -269,23 +280,22 @@ function Index() {
       </section>
 
       {/* Testimonial */}
-      <section className="bg-card border-y border-border py-24">
+      <section className="border-y border-border py-24" style={{ background: "var(--gradient-brand)" }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
           <span
-            className="text-xs uppercase tracking-widest text-primary mb-6 block"
+            className="text-xs uppercase tracking-widest text-primary-foreground/80 mb-6 block"
             style={{ fontFamily: "var(--font-mono)" }}
           >
             Quem confia
           </span>
           <blockquote
-            className="text-3xl md:text-4xl font-normal italic leading-snug text-balance"
-            style={{ fontFamily: "var(--font-serif)" }}
+            className="text-3xl md:text-4xl font-medium italic leading-snug text-balance text-primary-foreground"
           >
             "A primeira vez que me senti seguro em um projeto de tecnologia.
             Eles explicam o porquê de cada decisão e respeitam o nosso tempo."
           </blockquote>
-          <footer className="mt-8 text-sm text-muted-foreground">
-            <span className="block font-semibold text-foreground">
+          <footer className="mt-8 text-sm text-primary-foreground/70">
+            <span className="block font-semibold text-primary-foreground">
               Ricardo Almeida
             </span>
             Diretor de Operações
@@ -294,12 +304,16 @@ function Index() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-foreground text-background py-32 text-center">
+      <section className="bg-secondary text-secondary-foreground py-32 text-center relative overflow-hidden">
+        <div
+          className="absolute inset-0 opacity-20 pointer-events-none"
+          style={{ backgroundImage: "var(--pattern-digital)", backgroundSize: "20px 20px" }}
+        />
         <div className="max-w-3xl mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 text-balance">
+          <h2 className="text-4xl md:text-5xl font-black tracking-tighter mb-6 text-balance">
             Vamos conversar sobre o seu próximo passo?
           </h2>
-          <p className="text-background/60 mb-12 text-lg">
+          <p className="text-primary-foreground/70 mb-12 text-lg">
             O café fica por nossa conta. A solução técnica também.
           </p>
           <Link

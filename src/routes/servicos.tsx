@@ -73,7 +73,7 @@ function ServicosPage() {
         >
           Serviços
         </span>
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[0.95] mb-8 text-balance max-w-4xl">
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[0.95] text-secondary mb-8 text-balance max-w-4xl">
           Como podemos te{" "}
           <span
             className="italic font-normal text-primary"
@@ -125,7 +125,7 @@ function ServicosPage() {
 
       <section className="bg-foreground text-background py-24 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-balance">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-balance text-secondary">
             Não sabe por onde começar?
           </h2>
           <p className="text-background/60 mb-10">
