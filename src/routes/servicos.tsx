@@ -125,7 +125,7 @@ function ServicosPage() {
 
       <section className="bg-foreground text-background py-24 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-balance text-secondary">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-balance text-background">
             Não sabe por onde começar?
           </h2>
           <p className="text-background/60 mb-10">

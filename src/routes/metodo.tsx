@@ -134,7 +134,7 @@ function MetodoPage() {
 
       <section className="bg-foreground text-background py-24 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-balance text-secondary">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-balance text-background">
             Pronto para experimentar uma jornada tranquila?
           </h2>
           <Link
