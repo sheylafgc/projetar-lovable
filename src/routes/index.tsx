@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
-import heroImage from "@/assets/hero-workspace.jpg";
-import meetingImage from "@/assets/method-meeting.jpg";
+import heroImage from "@/assets/tech-hero.jpg";
+import meetingImage from "@/assets/partnership-macbook.jpg";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -56,14 +56,12 @@ function Index() {
           >
             Tecnologia com presença
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.95] mb-8 text-balance text-secondary">
-            Software não precisa ser{" "}
-            <span
-              className="italic text-primary"
-            >
-              estressante
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-8 text-balance text-secondary">
+            Do conceito ao crescimento.{" "}
+            <span className="italic text-primary">
+              Tecnologia completa
             </span>
-            .
+            , sempre.
           </h1>
           <p className="max-w-md text-xl text-muted-foreground leading-relaxed text-pretty mb-10">
             Construímos soluções robustas com a calma de quem domina o ofício.
@@ -71,13 +69,15 @@ function Index() {
             segurança de um time que cuida do seu projeto como se fosse o nosso.
           </p>
           <div className="flex items-center gap-6 flex-wrap">
-            <Link
-              to="/contato"
+            <a
+              href="https://wa.me/5583988126769"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary-foreground px-7 py-4 rounded-full font-semibold transition-transform hover:scale-[1.03] active:scale-95"
               style={{ background: "var(--gradient-brand)", boxShadow: "var(--shadow-brand)" }}
             >
               Conversar com um especialista
-            </Link>
+            </a>
             <Link to="/servicos" className="text-sm font-medium hover:text-primary transition-colors">
               Ver serviços →
             </Link>
@@ -316,12 +316,14 @@ function Index() {
           <p className="text-primary-foreground/70 mb-12 text-lg">
             O café fica por nossa conta. A solução técnica também.
           </p>
-          <Link
-            to="/contato"
+          <a
+            href="https://wa.me/5583988126769"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-5 rounded-full font-semibold transition-transform hover:scale-105 active:scale-95"
           >
             Agendar uma conversa gratuita
-          </Link>
+          </a>
         </div>
       </section>
 
