@@ -37,7 +37,7 @@ function ContatoPage() {
         >
           Contato
         </span>
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[0.95] mb-8 text-balance max-w-4xl">
+        <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[0.95] text-secondary mb-8 text-balance max-w-4xl">
           Conte sobre o seu{" "}
           <span
             className="italic font-normal text-primary"

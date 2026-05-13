@@ -64,7 +64,7 @@ function MetodoPage() {
           >
             Nosso método
           </span>
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[0.95] mb-8 text-balance">
+          <h1 className="text-5xl md:text-7xl font-black tracking-tighter leading-[0.95] text-secondary mb-8 text-balance">
             Tecnologia feita por{" "}
             <span
               className="italic font-normal text-primary"
@@ -134,7 +134,7 @@ function MetodoPage() {
 
       <section className="bg-foreground text-background py-24 text-center">
         <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6 text-balance">
+          <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-balance text-secondary">
             Pronto para experimentar uma jornada tranquila?
           </h2>
           <Link
