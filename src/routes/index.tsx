@@ -5,6 +5,7 @@ import meetingImage from "@/assets/partnership-macbook.jpg";
 import testimonial1 from "@/assets/testimonial-1.jpg";
 import testimonial2 from "@/assets/testimonial-2.jpg";
 import testimonial3 from "@/assets/testimonial-3.jpg";
+import partnersGrid from "@/assets/partners-grid.png";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -354,32 +355,14 @@ function Index() {
               Quem caminha com a gente
             </h2>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-px bg-border border border-border">
-            {[
-              "Núcleo Digital",
-              "Logix",
-              "Vertex Lab",
-              "Orbe Tech",
-              "Casa Nova",
-              "Norte Pay",
-              "Linha Verde",
-              "Praia Soft",
-              "Eixo Mais",
-              "Polar Data",
-            ].map((partner) => (
-              <div
-                key={partner}
-                className="bg-background h-24 flex items-center justify-center px-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all"
-              >
-                <span
-                  className="text-sm font-bold tracking-tight text-secondary text-center"
-                  style={{ fontFamily: "var(--font-mono)" }}
-                >
-                  {partner}
-                </span>
-              </div>
-            ))}
-          </div>
+          <img
+            src={partnersGrid}
+            alt="Logos das empresas parceiras"
+            width={1920}
+            height={768}
+            loading="lazy"
+            className="w-full h-auto opacity-80 hover:opacity-100 transition-opacity"
+          />
         </div>
       </section>
 
