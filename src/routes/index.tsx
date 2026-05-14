@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import heroImage from "@/assets/tech-hero.jpg";
 import meetingImage from "@/assets/partnership-macbook.jpg";
+import testimonial1 from "@/assets/testimonial-1.jpg";
+import testimonial2 from "@/assets/testimonial-2.jpg";
+import testimonial3 from "@/assets/testimonial-3.jpg";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -47,9 +50,9 @@ function Index() {
           backgroundSize: "24px 24px",
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/60 to-background pointer-events-none" />
-        <div className="relative max-w-7xl mx-auto px-6 pt-24 pb-32 grid md:grid-cols-[1fr_400px] gap-12 items-end">
-        <div className="animate-reveal">
+        <div className="absolute inset-0 bg-gradient-to-b from-background/0 via-background/40 to-background pointer-events-none" />
+        <div className="relative grid md:grid-cols-2 items-stretch min-h-[640px]">
+        <div className="animate-reveal flex flex-col justify-center px-6 md:pl-12 lg:pl-24 py-20 md:py-32 max-w-2xl">
           <span
             className="text-xs uppercase tracking-widest text-primary mb-6 block"
             style={{ fontFamily: "var(--font-mono)" }}
@@ -57,16 +60,16 @@ function Index() {
             Tecnologia com presença
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-8 text-balance text-secondary">
-            Do conceito ao crescimento.{" "}
+            Da ideia à{" "}
             <span className="italic text-primary">
-              Tecnologia completa
+              Eficiência Digital
             </span>
-            , sempre.
           </h1>
-          <p className="max-w-md text-xl text-muted-foreground leading-relaxed text-pretty mb-10">
+          <p className="max-w-xl text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty mb-10">
             Construímos soluções robustas com a calma de quem domina o ofício.
-            Como um café entre amigos: direto ao ponto, sem jargões e com a
-            segurança de um time que cuida do seu projeto como se fosse o nosso.
+            Como um café entre amigos: direto ao ponto, com transparência e com
+            a segurança de um time que cuida do seu projeto como se fosse o
+            nosso.
           </p>
           <div className="flex items-center gap-6 flex-wrap">
             <a
@@ -83,14 +86,15 @@ function Index() {
             </Link>
           </div>
         </div>
-        <div className="animate-reveal" style={{ animationDelay: "200ms" }}>
+        <div className="relative animate-reveal min-h-[400px] md:min-h-full" style={{ animationDelay: "200ms" }}>
           <img
             src={heroImage}
-            alt="Espaço de trabalho calmo com café e laptop"
-            width={800}
-            height={1000}
-            className="w-full aspect-[4/5] object-cover rounded-2xl ring-1 ring-primary/15 shadow-xl shadow-primary/10"
+            alt="Tecnologia e desenvolvimento de software"
+            width={1200}
+            height={1400}
+            className="absolute inset-0 w-full h-full object-cover"
           />
+          <div className="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-transparent md:bg-gradient-to-r md:from-background md:via-background/0 md:to-transparent pointer-events-none" />
         </div>
         </div>
       </header>
