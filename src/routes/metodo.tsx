@@ -80,7 +80,7 @@ function MetodoPage() {
             ao seu lado da mesa.
           </p>
         </div>
-        <div className="relative min-h-[400px] md:min-h-full md:-ml-16 lg:-ml-24">
+        <div className="relative min-h-[400px] md:min-h-full">
           <img
             src={meetingImage}
             alt="Equipe de tecnologia colaborando"
