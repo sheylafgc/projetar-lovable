@@ -97,10 +97,7 @@ function ServicosPage() {
               key={s.n}
               className="bg-card p-10 hover:bg-accent/40 transition-colors"
             >
-              <span
-                className="text-xs text-primary mb-4 block"
-                style={{ fontFamily: "var(--font-mono)" }}
-              >
+              <span className="text-xs text-primary mb-4 block font-semibold">
                 {s.n}
               </span>
               <h2 className="text-2xl font-semibold mb-4">{s.title}</h2>
