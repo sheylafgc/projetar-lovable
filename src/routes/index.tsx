@@ -283,27 +283,112 @@ function Index() {
         </div>
       </section>
 
-      {/* Testimonial */}
+      {/* Testimonials */}
       <section className="border-y border-border py-24" style={{ background: "var(--gradient-brand)" }}>
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <span
-            className="text-xs uppercase tracking-widest text-primary-foreground/80 mb-6 block"
-            style={{ fontFamily: "var(--font-mono)" }}
-          >
-            Quem confia
-          </span>
-          <blockquote
-            className="text-3xl md:text-4xl font-medium italic leading-snug text-balance text-primary-foreground"
-          >
-            "A primeira vez que me senti seguro em um projeto de tecnologia.
-            Eles explicam o porquê de cada decisão e respeitam o nosso tempo."
-          </blockquote>
-          <footer className="mt-8 text-sm text-primary-foreground/70">
-            <span className="block font-semibold text-primary-foreground">
-              Ricardo Almeida
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <span
+              className="text-xs uppercase tracking-widest text-primary-foreground/80 mb-6 block"
+              style={{ fontFamily: "var(--font-mono)" }}
+            >
+              Quem confia
             </span>
-            Diretor de Operações
-          </footer>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-primary-foreground">
+              Histórias de quem confiou na Projetar
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                quote: "A primeira vez que me senti seguro em um projeto de tecnologia. Explicam o porquê de cada decisão e respeitam o nosso tempo.",
+                name: "Ricardo Almeida",
+                role: "Diretor de Operações",
+                photo: testimonial1,
+              },
+              {
+                quote: "A entrega foi impecável. Em poucas semanas tínhamos uma solução rodando, com a equipe treinada e um suporte sempre presente.",
+                name: "Mariana Costa",
+                role: "CEO, Núcleo Digital",
+                photo: testimonial2,
+              },
+              {
+                quote: "Parceria de verdade. Mais que um fornecedor de tecnologia, viraram extensão do nosso time. Recomendo de olhos fechados.",
+                name: "Paulo Henrique",
+                role: "Sócio-fundador, Logix",
+                photo: testimonial3,
+              },
+            ].map((t) => (
+              <figure
+                key={t.name}
+                className="bg-background rounded-2xl p-8 flex flex-col gap-6 shadow-xl"
+              >
+                <blockquote className="text-base leading-relaxed text-foreground/85 italic flex-1">
+                  "{t.quote}"
+                </blockquote>
+                <figcaption className="flex items-center gap-4 border-t border-border pt-6">
+                  <img
+                    src={t.photo}
+                    alt={t.name}
+                    width={56}
+                    height={56}
+                    loading="lazy"
+                    className="size-14 rounded-full object-cover ring-2 ring-primary/20"
+                  />
+                  <div>
+                    <span className="block font-semibold text-secondary">
+                      {t.name}
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      {t.role}
+                    </span>
+                  </div>
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Partners */}
+      <section className="py-20 border-b border-border bg-background">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <span
+              className="text-xs uppercase tracking-widest text-primary mb-3 block"
+              style={{ fontFamily: "var(--font-mono)" }}
+            >
+              Empresas parceiras
+            </span>
+            <h2 className="text-2xl md:text-3xl font-black tracking-tight text-secondary">
+              Quem caminha com a gente
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-px bg-border border border-border">
+            {[
+              "Núcleo Digital",
+              "Logix",
+              "Vertex Lab",
+              "Orbe Tech",
+              "Casa Nova",
+              "Norte Pay",
+              "Linha Verde",
+              "Praia Soft",
+              "Eixo Mais",
+              "Polar Data",
+            ].map((partner) => (
+              <div
+                key={partner}
+                className="bg-background h-24 flex items-center justify-center px-4 grayscale opacity-60 hover:opacity-100 hover:grayscale-0 transition-all"
+              >
+                <span
+                  className="text-sm font-bold tracking-tight text-secondary text-center"
+                  style={{ fontFamily: "var(--font-mono)" }}
+                >
+                  {partner}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
