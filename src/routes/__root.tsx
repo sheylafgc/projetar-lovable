@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Projetar Soluções Tecnológicas" },
+      { name: "description", content: "Da ideia à eficiência digital" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Projetar Soluções Tecnológicas" },
+      { property: "og:description", content: "Da ideia à eficiência digital" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Projetar Soluções Tecnológicas" },
+      { name: "twitter:description", content: "Da ideia à eficiência digital" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/367ab172-f8c7-4d67-9668-aaf86e29dd56/id-preview-6f43794b--0c94a471-0709-423c-be0b-0b0e9a4e38ed.lovable.app-1778756430321.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/367ab172-f8c7-4d67-9668-aaf86e29dd56/id-preview-6f43794b--0c94a471-0709-423c-be0b-0b0e9a4e38ed.lovable.app-1778756430321.png" },
     ],
     links: [
       {
