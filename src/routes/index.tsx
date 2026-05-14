@@ -57,7 +57,7 @@ function Index() {
             className="text-xs uppercase tracking-widest text-primary mb-6 block"
             style={{ fontFamily: "var(--font-mono)" }}
           >
-            Tecnologia com presença
+            Tecnologia para transformação
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-8 text-balance text-secondary">
             Da ideia à{" "}
@@ -86,7 +86,7 @@ function Index() {
             </Link>
           </div>
         </div>
-        <div className="relative animate-reveal min-h-[400px] md:min-h-full" style={{ animationDelay: "200ms" }}>
+        <div className="relative animate-reveal min-h-[400px] md:min-h-full md:-ml-16 lg:-ml-24" style={{ animationDelay: "200ms" }}>
           <img
             src={heroImage}
             alt="Tecnologia e desenvolvimento de software"
@@ -94,7 +94,7 @@ function Index() {
             height={1400}
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/40 via-transparent to-transparent md:bg-gradient-to-r md:from-background md:via-background/0 md:to-transparent pointer-events-none" />
+          <div className="absolute inset-0 bg-background/40 md:hidden pointer-events-none" />
         </div>
         </div>
       </header>
@@ -127,12 +127,6 @@ function Index() {
             <h2 className="text-3xl md:text-4xl font-black tracking-tight text-secondary">
               Nossas frentes de atuação
             </h2>
-            <span
-              className="text-sm text-muted-foreground"
-              style={{ fontFamily: "var(--font-mono)" }}
-            >
-              06 ESPECIALIDADES
-            </span>
           </div>
           <div className="grid md:grid-cols-3 gap-px bg-border border border-border">
             {services.map((s) => (
@@ -140,10 +134,7 @@ function Index() {
                 key={s.n}
                 className="bg-background p-10 hover:bg-accent/40 transition-colors"
               >
-                <span
-                  className="text-xs text-primary mb-4 block font-semibold"
-                  style={{ fontFamily: "var(--font-mono)" }}
-                >
+                <span className="text-xs text-primary mb-4 block font-semibold">
                   {s.n}
                 </span>
                 <h3 className="text-xl font-bold mb-3 text-secondary">{s.title}</h3>
