@@ -21,14 +21,12 @@ export function SiteHeader() {
           <Link to="/metodo" className="hover:text-primary transition-colors" activeProps={{ className: "text-primary" }}>
             Método
           </Link>
-          <a
-            href="https://wa.me/5583988126769"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/contato"
             className="ml-2 inline-flex items-center rounded-full bg-primary text-primary-foreground px-5 py-2.5 hover:bg-primary/90 transition-colors shadow-md shadow-primary/20"
           >
             Falar com a Projetar
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

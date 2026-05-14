@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import meetingImage from "@/assets/method-meeting.jpg";
+import meetingImage from "@/assets/tech-team.png";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -82,11 +82,11 @@ function MetodoPage() {
         </div>
         <img
           src={meetingImage}
-          alt="Reunião de planejamento técnico"
+          alt="Equipe de tecnologia colaborando"
           width={1024}
           height={1024}
           loading="lazy"
-          className="w-full aspect-square object-cover rounded-3xl outline outline-1 -outline-offset-1 outline-foreground/5"
+          className="w-full aspect-square object-contain"
         />
       </header>
 
