@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import meetingImage from "@/assets/tech-team.png";
+import meetingImage from "@/assets/method-team.jpg";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -56,8 +56,8 @@ function MetodoPage() {
     <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      <header className="max-w-7xl mx-auto px-6 pt-24 pb-20 grid md:grid-cols-[1.2fr_1fr] gap-16 items-center">
-        <div>
+      <header className="relative grid md:grid-cols-2 items-stretch min-h-[640px]">
+        <div className="flex flex-col justify-center px-6 md:pl-12 lg:pl-24 py-20 md:py-32 max-w-2xl">
           <span
             className="text-xs uppercase tracking-widest text-primary mb-6 block"
             style={{ fontFamily: "var(--font-mono)" }}
@@ -80,14 +80,17 @@ function MetodoPage() {
             ao seu lado da mesa.
           </p>
         </div>
-        <img
-          src={meetingImage}
-          alt="Equipe de tecnologia colaborando"
-          width={1024}
-          height={1024}
-          loading="lazy"
-          className="w-full aspect-square object-contain"
-        />
+        <div className="relative min-h-[400px] md:min-h-full md:-ml-16 lg:-ml-24">
+          <img
+            src={meetingImage}
+            alt="Equipe de tecnologia colaborando"
+            width={1024}
+            height={1280}
+            loading="lazy"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/40 md:hidden pointer-events-none" />
+        </div>
       </header>
 
       <section className="max-w-5xl mx-auto px-6 py-20">
