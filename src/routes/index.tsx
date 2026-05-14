@@ -86,7 +86,7 @@ function Index() {
             </Link>
           </div>
         </div>
-        <div className="relative animate-reveal min-h-[400px] md:min-h-full" style={{ animationDelay: "200ms" }}>
+        <div className="relative animate-reveal min-h-[400px] md:min-h-full md:-ml-16 lg:-ml-24" style={{ animationDelay: "200ms" }}>
           <img
             src={heroImage}
             alt="Tecnologia e desenvolvimento de software"
