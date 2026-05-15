@@ -62,8 +62,8 @@ function Index() {
           </span>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-8 text-balance text-secondary">
             Da ideia à{" "}
-            <span className="italic text-primary">
-              Eficiência Digital
+            <span className="italic text-primary lowercase">
+              eficiência digital
             </span>
           </h1>
           <p className="max-w-xl text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty mb-10">
@@ -87,7 +87,7 @@ function Index() {
             </Link>
           </div>
         </div>
-        <div className="relative animate-reveal min-h-[400px] md:min-h-full md:-ml-16 lg:-ml-24" style={{ animationDelay: "200ms" }}>
+        <div className="relative animate-reveal min-h-[400px] md:min-h-full" style={{ animationDelay: "200ms" }}>
           <img
             src={heroImage}
             alt="Tecnologia e desenvolvimento de software"
@@ -342,9 +342,9 @@ function Index() {
       </section>
 
       {/* Partners */}
-      <section className="py-20 border-b border-border bg-background">
+      <section className="py-12 border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-12">
+          <div className="text-center mb-6">
             <span
               className="text-xs uppercase tracking-widest text-primary mb-3 block"
               style={{ fontFamily: "var(--font-mono)" }}

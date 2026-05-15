@@ -100,10 +100,7 @@ function MetodoPage() {
               key={s.n}
               className="bg-card p-10 grid md:grid-cols-[140px_1fr] gap-6 items-start hover:bg-accent/40 transition-colors"
             >
-              <span
-                className="text-primary text-sm"
-                style={{ fontFamily: "var(--font-mono)" }}
-              >
+              <span className="text-primary text-sm font-semibold">
                 ETAPA {s.n}
               </span>
               <div>
