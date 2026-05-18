@@ -120,7 +120,7 @@ function ServicosPage() {
         </div>
       </section>
 
-      <section className="bg-foreground text-background py-24 text-center">
+      <section className="py-24 text-center" style={{ backgroundColor: "#3f0082" }}>
         <div className="max-w-2xl mx-auto px-6">
           <h2 className="text-3xl md:text-4xl font-black tracking-tight mb-6 text-balance text-background">
             Não sabe por onde começar?
