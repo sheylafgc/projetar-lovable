@@ -342,9 +342,9 @@ function Index() {
       </section>
 
       {/* Partners */}
-      <section className="py-12 border-b border-border bg-background">
+      <section className="py-6 border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-6">
+          <div className="text-center mb-3">
             <span
               className="text-xs uppercase tracking-widest text-primary mb-3 block"
               style={{ fontFamily: "var(--font-mono)" }}
@@ -367,7 +367,7 @@ function Index() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-secondary text-secondary-foreground py-32 text-center relative overflow-hidden">
+      <section className="bg-secondary text-secondary-foreground py-16 text-center relative overflow-hidden">
         <div
           className="absolute inset-0 opacity-20 pointer-events-none"
           style={{ backgroundImage: "var(--pattern-digital)", backgroundSize: "20px 20px" }}
