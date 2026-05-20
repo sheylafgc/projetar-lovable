@@ -342,9 +342,9 @@ function Index() {
       </section>
 
       {/* Partners */}
-      <section className="py-6 border-b border-border bg-background">
+      <section className="pt-12 pb-4 border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-3">
+          <div className="text-center mb-2">
             <span
               className="text-xs uppercase tracking-widest text-primary mb-3 block"
               style={{ fontFamily: "var(--font-mono)" }}
