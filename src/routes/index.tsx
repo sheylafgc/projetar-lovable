@@ -256,7 +256,7 @@ function Index() {
 
           <div className="grid md:grid-cols-3 gap-10 border-t border-border pt-16">
             {[
-              { n: "15+", l: "Anos de Experiência" },
+              { n: "14+", l: "Anos de Experiência" },
               { n: "50+", l: "Projetos Concluídos" },
               { n: "100%", l: "Dedicados ao Sucesso" },
             ].map((s) => (
