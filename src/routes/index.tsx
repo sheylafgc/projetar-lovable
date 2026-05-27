@@ -351,7 +351,7 @@ function Index() {
       </section>
 
       {/* Partners */}
-      <section className="pt-20 pb-4 border-b border-border bg-background">
+      <section className="pt-20 pb-16 border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-2">
             <span
