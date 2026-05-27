@@ -256,7 +256,7 @@ function Index() {
 
           <div className="grid md:grid-cols-3 gap-10 border-t border-border pt-16">
             {[
-              { n: "15+", l: "Anos de Experiência" },
+              { n: "14+", l: "Anos de Experiência" },
               { n: "50+", l: "Projetos Concluídos" },
               { n: "100%", l: "Dedicados ao Sucesso" },
             ].map((s) => (
@@ -351,7 +351,7 @@ function Index() {
       </section>
 
       {/* Partners */}
-      <section className="pt-20 pb-4 border-b border-border bg-background">
+      <section className="pt-20 pb-16 border-b border-border bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-2">
             <span
