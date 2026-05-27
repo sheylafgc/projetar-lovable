@@ -2,9 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import heroImage from "@/assets/tech-hero.jpg";
 import meetingImage from "@/assets/partnership-macbook.jpg";
-import testimonial1 from "@/assets/testimonial-1.jpg";
-import testimonial2 from "@/assets/testimonial-2.jpg";
-import testimonial3 from "@/assets/testimonial-3.jpg";
+import testimonialVitor from "@/assets/testimonial-vitor.png";
+import testimonialCamilla from "@/assets/testimonial-camilla.png";
+import testimonialPedro from "@/assets/testimonial-pedro.png";
 import partnersGrid from "@/assets/partners-grid.png";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
@@ -292,22 +292,22 @@ function Index() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                quote: "A primeira vez que me senti seguro em um projeto de tecnologia. Explicam o porquê de cada decisão e respeitam o nosso tempo.",
-                name: "Ricardo Almeida",
-                role: "Diretor de Operações",
-                photo: testimonial1,
+                quote: "Eles se destacam pela pontualidade e a disposição 24 horas. É uma questão de agilidade além do que a gente espera. Sem dúvidas, seus pontos fortes são: pontualidade, agilidade, atenção aos detalhes e qualidade estética.",
+                name: "Vitor Garcia",
+                role: "Analista de Marketing",
+                photo: testimonialVitor,
               },
               {
-                quote: "A entrega foi impecável. Em poucas semanas tínhamos uma solução rodando, com a equipe treinada e um suporte sempre presente.",
-                name: "Mariana Costa",
-                role: "CEO, Núcleo Digital",
-                photo: testimonial2,
+                quote: "Já trabalho com a Projetar há anos e posso atestar a qualidade da entrega, visão estratégica e compromisso com o resultado e melhor performance do produto contratado. Sempre uma excelente experiência!",
+                name: "Camilla Coriolano",
+                role: "Gerente de Marketing",
+                photo: testimonialCamilla,
               },
               {
-                quote: "Parceria de verdade. Mais que um fornecedor de tecnologia, viraram extensão do nosso time. Recomendo de olhos fechados.",
-                name: "Paulo Henrique",
-                role: "Sócio-fundador, Logix",
-                photo: testimonial3,
+                quote: "Possuem excelentes profissionais. São sempre proativos, dedicados e abertos a feedbacks. Buscam sempre por melhorias nos projetos, o que nos dá segurança. Sheyla é uma das profissionais mais incríveis com quem já trabalhei.",
+                name: "Pedro Cordeiro",
+                role: "Diretor Executivo (CEO)",
+                photo: testimonialPedro,
               },
             ].map((t) => (
               <figure
