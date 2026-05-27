@@ -5,7 +5,16 @@ import meetingImage from "@/assets/partnership-macbook.jpg";
 import testimonialVitor from "@/assets/testimonial-vitor.png";
 import testimonialCamilla from "@/assets/testimonial-camilla.png";
 import testimonialPedro from "@/assets/testimonial-pedro.png";
-import partnersGrid from "@/assets/partners-grid.png";
+import partner1 from "@/assets/partners/1.png";
+import partner2 from "@/assets/partners/2.png";
+import partner3 from "@/assets/partners/3.png";
+import partner4 from "@/assets/partners/4.png";
+import partner5 from "@/assets/partners/5.png";
+import partner6 from "@/assets/partners/6.png";
+import partner7 from "@/assets/partners/7.png";
+import partner8 from "@/assets/partners/8.png";
+import partner9 from "@/assets/partners/9.png";
+import partner10 from "@/assets/partners/10.png";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 
@@ -355,14 +364,29 @@ function Index() {
               Quem caminha com a gente
             </h2>
           </div>
-          <img
-            src={partnersGrid}
-            alt="Logos das empresas parceiras"
-            width={1920}
-            height={768}
-            loading="lazy"
-            className="w-full h-auto opacity-80 hover:opacity-100 transition-opacity"
-          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center">
+            {[
+              { src: partner1, alt: "Alliance" },
+              { src: partner2, alt: "Andrade Marinho LMF" },
+              { src: partner3, alt: "R1 Tecnologia" },
+              { src: partner4, alt: "Project Management Institute" },
+              { src: partner5, alt: "GHC Incorporações" },
+              { src: partner6, alt: "Progress" },
+              { src: partner7, alt: "Urban" },
+              { src: partner8, alt: "CTV" },
+              { src: partner9, alt: "Senus Investimentos Imobiliários" },
+              { src: partner10, alt: "Origem Ciclo" },
+            ].map((p) => (
+              <div key={p.alt} className="flex items-center justify-center p-4">
+                <img
+                  src={p.src}
+                  alt={p.alt}
+                  loading="lazy"
+                  className="max-h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
