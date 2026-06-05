@@ -12,4 +12,8 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  // Deploy target. Nitro's "vercel" preset emits .vercel/output (Build Output
+  // API v3), which Vercel serves natively. Override to deploy elsewhere
+  // (e.g. "cloudflare-module", "node-server").
+  nitro: { preset: "vercel" },
 });
